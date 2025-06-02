@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play AI_지현쌤 - AI 교육 플랫폼</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container flex justify-between items-center">
+            <div class="logo" id="logo">
+                <h1>Play AI_<span class="highlight">지현쌤</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list flex">
+                    <li><a href="#home" class="nav-link active" data-page="home">홈</a></li>
+                    <li><a href="#courses" class="nav-link" data-page="courses">교육과정</a></li>
+                    <li><a href="#ai-experience" class="nav-link" data-page="ai-experience">AI체험</a></li>
+                    <li><a href="#tips" class="nav-link" data-page="tips">꿀팁모음</a></li>
+                    <li><a href="#guide" class="nav-link" data-page="guide">학습가이드</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">문의하기</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="font-size-controls">
+                <button class="btn btn--sm font-size-btn" data-size="100">기본</button>
+                <button class="btn btn--sm font-size-btn" data-size="125">크게</button>
+                <button class="btn btn--sm font-size-btn" data-size="150">더크게</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="breadcrumbs container">
+        <ul id="breadcrumb-list">
+            <li><a href="#home">홈</a></li>
+        </ul>
+    </div>
+
+    <!-- 페이지 컨테이너 -->
+    <main class="container main-content">
+        <!-- 홈 페이지 -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2 class="main-title">AI 시대, 우리도 놀면서 해봐요. 남녀노소, 누구나 ❣️</h2>
+                    <p class="subtitle">즐겁게 놀면서 배우는 AI - 지현쌤과 함께하는 신나는 디지털 세상</p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="btn btn--primary hero-btn" data-page="courses">교육과정 살펴보기</a>
+                        <a href="#ai-experience" class="btn btn--secondary hero-btn" data-page="ai-experience">AI 체험하기</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1748795800/gpt4o_images/hv4aj7oy9fd6wlztjqub.png" alt="지현쌤이랑 AI랑 놀자❤️" class="teacher-img">
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h3 class="section-title">Play AI_지현쌤과 함께하는 AI 여행</h3>
+                <div class="features-grid">
+                    <div class="feature-card" data-page="courses">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="feature-icon">📚</div>
+                                <h4>교육과정</h4>
+                                <p>초급부터 고급까지 8가지 맞춤형 AI 교육과정</p>
+                                <a href="#courses" class="feature-link" data-page="courses">자세히 보기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-page="ai-experience">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="feature-icon">🎮</div>
+                                <h4>AI 체험</h4>
+                                <p>다양한 AI 기술을 직접 체험하고 배워보세요</p>
+                                <a href="#ai-experience" class="feature-link" data-page="ai-experience">자세히 보기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-page="tips">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="feature-icon">💡</div>
+                                <h4>꿀팁 모음</h4>
+                                <p>AI를 더 효율적으로 활용하는 실용적인 팁</p>
+                                <a href="#tips" class="feature-link" data-page="tips">자세히 보기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-page="guide">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="feature-icon">📝</div>
+                                <h4>학습 가이드</h4>
+                                <p>단계별 가이드로 쉽게 따라하는 AI 활용법</p>
+                                <a href="#guide" class="feature-link" data-page="guide">자세히 보기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-teacher">
+                <div class="container">
+                    <h3 class="section-title">지현쌤을 소개합니다</h3>
+                    <div class="about-content">
+                        <div class="teacher-image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1748795800/gpt4o_images/hv4aj7oy9fd6wlztjqub.png" alt="지현쌤이랑 AI랑 놀자❤️">
+                        </div>
+                        <div class="teacher-info">
+                            <p>안녕하세요, 디지털 시대를 함께 즐겁게 항해할 '지현쌤'입니다. 누구나 쉽고 재미있게 AI를 배울 수 있도록 도와드립니다.</p>
+                            <p>디지털 기기와 AI에 대한 두려움은 내려놓으세요. 지현쌤과 함께라면 쉽고 재미있게 배울 수 있어요!</p>
+                            <a href="#contact" class="btn btn--primary" data-page="contact">지현쌤과 연결하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 교육과정 페이지 -->
+        <section id="courses" class="page">
+            <h2 class="page-title">교육과정</h2>
+            <p class="page-description">단계별로 쉽게 배우는 AI 활용 교육 과정입니다. 초보자부터 고급 사용자까지 모두를 위한 맞춤형 커리큘럼을 제공합니다.</p>
+
+            <div class="courses-grid">
+                <!-- 코스 1 -->
+                <div class="course-card" data-course-id="1">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">🤖</span>
+                            <span class="course-level status status--info">초급</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">1. AI 기초 이해하기</h3>
+                            <p class="course-description">AI 개념과 일상 속 AI 찾기, 두려움 해소를 위한 친근한 접근</p>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 2 -->
+                <div class="course-card" data-course-id="2">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">💬</span>
+                            <span class="course-level status status--info">초급-중급</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">2. ChatGPT 마스터하기</h3>
+                            <p class="course-description">회원가입부터 고급 활용까지, 실생활 질문 예시 제공</p>
+                            <a href="https://chat.openai.com" target="_blank" class="btn btn--outline external-link">ChatGPT 바로가기</a>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 3 -->
+                <div class="course-card" data-course-id="3">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">🎨</span>
+                            <span class="course-level status status--info">중급</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">3. AI 이미지 크리에이터</h3>
+                            <p class="course-description">Google Image FX와 Whisk으로 창의적인 이미지 제작</p>
+                            <div class="tool-links">
+                                <a href="https://imagesfx.withgoogle.com" target="_blank" class="btn btn--outline external-link">Image FX</a>
+                                <a href="https://labs.google/fx/tools/whisk" target="_blank" class="btn btn--outline external-link">Whisk</a>
+                            </div>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 4 -->
+                <div class="course-card" data-course-id="4">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">🎬</span>
+                            <span class="course-level status status--warning">실습</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">4. VITA 영상편집 마스터</h3>
+                            <p class="course-description">영상편집 3대 핵심 기술 완전 마스터</p>
+                            <ul class="course-features">
+                                <li>컷편집: 불필요한 부분 자르기, 순서 변경</li>
+                                <li>자막 추가: 텍스트 입력, 스타일/애니메이션 적용</li>
+                                <li>음악 추가: 배경음악, 사운드 효과</li>
+                                <li>고급 기능: 키프레임, 필터, 트랜지션</li>
+                            </ul>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 5 -->
+                <div class="course-card" data-course-id="5">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">💬</span>
+                            <span class="course-level status status--success">필수</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">5. 카카오톡 완전 정복</h3>
+                            <p class="course-description">기초부터 고급까지 모든 기능 완전 활용</p>
+                            <ul class="course-features">
+                                <li>프로필 꾸미기: 사진, 배경, 이모티콘 스티커</li>
+                                <li>채팅 고급 기능: 그룹채팅, 채팅방 고정, 검색</li>
+                                <li>샵 기능: 날씨, 번역기, 계산기, 게임</li>
+                                <li>보안 기능: 톡사이렌, 피싱 예방, 차단/숨김</li>
+                                <li>카카오페이: 송금, 결제, 선물하기</li>
+                            </ul>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 6 -->
+                <div class="course-card" data-course-id="6">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">🏛️</span>
+                            <span class="course-level status status--success">필수</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">6. 공공서비스 디지털 활용</h3>
+                            <p class="course-description">찾아가는 시니어 디지털 스쿨 교재 기반</p>
+                            <ul class="course-features">
+                                <li>복지멤버십: 맞춤형 복지서비스 신청</li>
+                                <li>모바일 신분증: 디지털 신분 확인</li>
+                                <li>민원서류 발급: 정부24 활용법</li>
+                                <li>국민비서 구삐: 중요 알림 서비스</li>
+                                <li>치매체크: 건강 관리 앱 활용</li>
+                            </ul>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 7 -->
+                <div class="course-card" data-course-id="7">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">📱</span>
+                            <span class="course-level status status--warning">실습</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">7. 생활 필수 앱 완전 가이드</h3>
+                            <p class="course-description">일상생활에 꼭 필요한 앱 활용 가이드</p>
+                            <ul class="course-features">
+                                <li>네이버 쇼핑: 검색부터 결제까지 단계별 안내</li>
+                                <li>교통카드 앱: 충전, 이용내역 확인</li>
+                                <li>지도 앱: 길찾기, 대중교통, 주변 검색</li>
+                                <li>은행 앱: 계좌조회, 이체, 간편결제</li>
+                                <li>배달 앱: 주문부터 결제까지</li>
+                            </ul>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 코스 8 -->
+                <div class="course-card" data-course-id="8">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="course-icon">🎨</span>
+                            <span class="course-level status status--warning">체험</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="course-title">8. 창작 활동 과정</h3>
+                            <p class="course-description">AI로 창의적인 작품 만들기</p>
+                            <ul class="course-features">
+                                <li>글그램: 아름다운 배경에 글쓰기</li>
+                                <li>애니메이션 메이커: 그림을 움직이는 영상으로</li>
+                                <li>크리스마스/신년 카드: 생성형 AI로 특별한 카드 제작</li>
+                            </ul>
+                            <button class="btn btn--primary course-detail-btn">세부 내용 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI 체험 페이지 -->
+        <section id="ai-experience" class="page">
+            <h2 class="page-title">AI 체험</h2>
+            <p class="page-description">다양한 AI 기술을 직접 체험하고 활용해보세요. 지현쌤이 함께합니다!</p>
+
+            <div class="experience-grid">
+                <!-- 체험 1 -->
+                <div class="experience-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="experience-icon">🎤</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="experience-title">음성인식 AI 체험하기</h3>
+                            <p class="experience-description">음성을 텍스트로 변환하고 음성 명령 활용하기</p>
+                            <button class="btn btn--primary experience-detail-btn" data-experience="voice">체험 방법 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 체험 2 -->
+                <div class="experience-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="experience-icon">🌐</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="experience-title">AI 번역기 활용하기</h3>
+                            <p class="experience-description">실시간 번역으로 전 세계와 소통하기</p>
+                            <button class="btn btn--primary experience-detail-btn" data-experience="translate">체험 방법 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 체험 3 -->
+                <div class="experience-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="experience-icon">🎵</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="experience-title">AI 음악 만들기 체험</h3>
+                            <p class="experience-description">AI로 나만의 음악과 멜로디 창작하기</p>
+                            <button class="btn btn--primary experience-detail-btn" data-experience="music">체험 방법 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 체험 4 -->
+                <div class="experience-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="experience-icon">💪</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="experience-title">AI 운동 코치 체험</h3>
+                            <p class="experience-description">개인 맞춤형 운동 플랜과 자세 교정</p>
+                            <button class="btn btn--primary experience-detail-btn" data-experience="fitness">체험 방법 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 체험 5 -->
+                <div class="experience-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="experience-icon">🌱</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="experience-title">AI 식물 관리 도우미</h3>
+                            <p class="experience-description">식물 상태 진단과 관리 조언 받기</p>
+                            <button class="btn btn--primary experience-detail-btn" data-experience="plant">체험 방법 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 체험 6 -->
+                <div class="experience-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="experience-icon">🚀</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="experience-title">미래의 AI 기술 미리보기</h3>
+                            <p class="experience-description">곧 출시될 혁신적인 AI 기술들 체험</p>
+                            <button class="btn btn--primary experience-detail-btn" data-experience="future">체험 방법 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 꿀팁 모음 페이지 -->
+        <section id="tips" class="page">
+            <h2 class="page-title">AI 활용 꿀팁 대방출</h2>
+            <p class="page-description">실생활에 바로 활용할 수 있는 유용한 AI 활용 팁을 모았습니다.</p>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="tip-icon">💬</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="tip-title">효과적인 AI 질문 방법</h3>
+                            <p class="tip-description">AI가 잘 이해할 수 있는 질문 기법</p>
+                            <button class="btn btn--primary tip-detail-btn" data-tip="question">꿀팁 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="tip-icon">💡</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="tip-title">창의적 활용 아이디어</h3>
+                            <p class="tip-description">일상생활에서 AI를 창의적으로 활용하는 방법</p>
+                            <button class="btn btn--primary tip-detail-btn" data-tip="creative">꿀팁 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="tip-icon">⏱️</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="tip-title">시간 절약하는 스마트한 방법</h3>
+                            <p class="tip-description">AI로 업무와 생활을 효율적으로 만드는 팁</p>
+                            <button class="btn btn--primary tip-detail-btn" data-tip="timesaving">꿀팁 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="tip-icon">👨‍👩‍👧‍👦</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="tip-title">가족과 함께 즐기는 AI 놀이</h3>
+                            <p class="tip-description">손주들과 함께 할 수 있는 재미있는 AI 활동</p>
+                            <button class="btn btn--primary tip-detail-btn" data-tip="family">꿀팁 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="tip-icon">🔒</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="tip-title">안전하게 사용하는 보안 수칙</h3>
+                            <p class="tip-description">AI 사용 시 개인정보 보호와 보안 주의사항</p>
+                            <button class="btn btn--primary tip-detail-btn" data-tip="security">꿀팁 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="tip-icon">✨</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="tip-title">실생활 바로 써먹는 꿀팁 모음</h3>
+                            <p class="tip-description">일상에서 바로 활용 가능한 실용적인 AI 팁</p>
+                            <button class="btn btn--primary tip-detail-btn" data-tip="practical">꿀팁 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 학습 가이드 페이지 -->
+        <section id="guide" class="page">
+            <h2 class="page-title">학습 가이드</h2>
+            <p class="page-description">단계별로 차근차근 배울 수 있는 가이드입니다. 아래 가이드를 따라하면서 AI를 쉽게 익혀보세요.</p>
+
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="guide-icon">1️⃣</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="guide-title">AI 첫 시작하기</h3>
+                            <p class="guide-description">AI 입문자를 위한 기초 가이드</p>
+                            <button class="btn btn--primary guide-detail-btn" data-guide="beginner">가이드 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="guide-icon">2️⃣</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="guide-title">ChatGPT 활용 가이드</h3>
+                            <p class="guide-description">회원가입부터 대화까지 단계별 안내</p>
+                            <button class="btn btn--primary guide-detail-btn" data-guide="chatgpt">가이드 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="guide-icon">3️⃣</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="guide-title">AI 이미지 만들기</h3>
+                            <p class="guide-description">이미지 생성 도구 사용법</p>
+                            <button class="btn btn--primary guide-detail-btn" data-guide="image">가이드 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="guide-icon">4️⃣</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="guide-title">카카오톡 기능 활용</h3>
+                            <p class="guide-description">카카오톡 주요 기능 사용법</p>
+                            <button class="btn btn--primary guide-detail-btn" data-guide="kakao">가이드 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="guide-icon">5️⃣</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="guide-title">공공서비스 이용 가이드</h3>
+                            <p class="guide-description">정부24와 주요 공공 앱 활용법</p>
+                            <button class="btn btn--primary guide-detail-btn" data-guide="public">가이드 보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="guide-icon">6️⃣</span>
+                        </div>
+                        <div class="card__body">
+                            <h3 class="guide-title">AI 음악/영상 제작</h3>
+                            <p class="guide-description">멀티미디어 콘텐츠 만들기</p>
+                            <button class="btn btn--primary guide-detail-btn" data-guide="multimedia">가이드 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 문의하기 페이지 -->
+        <section id="contact" class="page">
+            <h2 class="page-title">문의하기</h2>
+            <p class="page-description">지현쌤과 직접 연결해서 궁금한 점을 물어보세요!</p>
+
+            <div class="contact-container">
+                <div class="kakao-channel">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3 class="channel-title">카카오톡으로 연결하기</h3>
+                            <p class="channel-description">카카오톡에서 'Play AI_지현쌤' 검색하여 채널 추가하세요.</p>
+                            <a href="http://pf.kakao.com/_ZmuVn/friend" target="_blank" class="btn btn--primary kakao-btn">
+                                채널 바로가기
+                            </a>
+                            <div class="kakao-search-info">
+                                <p>💬 카카오톡 앱을 열고 <strong>Play AI_지현쌤</strong> 검색!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>지현쌤과 함께하는 AI 교육</h3>
+                            <div class="teacher-contact-image">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1748795800/gpt4o_images/hv4aj7oy9fd6wlztjqub.png" alt="지현쌤이랑 AI랑 놀자❤️">
+                            </div>
+                            <p>개인 맞춤형 AI 교육 상담을 받아보세요!</p>
+                            <p>모든 연령대를 위한 쉽고 재미있는 AI 교육!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 모달 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Play AI_지현쌤</h3>
+                    <p>즐겁게 놀면서 배우는 AI 교육 플랫폼</p>
+                </div>
+                <div class="footer-section">
+                    <h4>교육과정</h4>
+                    <ul>
+                        <li><a href="#courses" data-page="courses">AI 기초 이해하기</a></li>
+                        <li><a href="#courses" data-page="courses">ChatGPT 마스터하기</a></li>
+                        <li><a href="#courses" data-page="courses">AI 이미지 크리에이터</a></li>
+                        <li><a href="#courses" data-page="courses">더보기...</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>빠른 링크</h4>
+                    <ul>
+                        <li><a href="#home" data-page="home">홈</a></li>
+                        <li><a href="#ai-experience" data-page="ai-experience">AI 체험</a></li>
+                        <li><a href="#tips" data-page="tips">꿀팁 모음</a></li>
+                        <li><a href="#contact" data-page="contact">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>카카오톡: Play AI_지현쌤</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Play AI_지현쌤. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
